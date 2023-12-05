@@ -1,29 +1,27 @@
-# Savvy Coders Project Boilerplate Starter Kit
+# Build a Personal Portfolio Webpage
 
-## Overview
+## Objective:
+Build an app that is functionally similar to [this](https://personal-portfolio.freecodecamp.rocks).
 
-This template repository contains several opinionated, 'starter' files and settings to help Savvy Coder students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
+## User Stories:
 
-In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
+1. Your portfolio should have a welcome section with an `id` of `welcome-section`
+1. The welcome section should have an `h1` element that contains text
+1. Your portfolio should have a projects section with an `id` of `projects`
+1. The projects section should contain at least one element with a `class` of `project-tile` to hold a project
+1. The projects section should contain at least one link to a project
+1. Your portfolio should have a navbar with an id of `navbar`
+1. The navbar should contain at least one link that you can click on to navigate to different sections of the page
+1. Your portfolio should have a link with an id of `profile-link`, which opens your GitHub or freeCodeCamp profile in a new tab
+1. Your portfolio should have at least one media query
+1. The height of the welcome section should be equal to the height of the viewport
+1. The navbar should always be at the top of the viewport
 
-1. [ESLint](eslint.org)
-2. [Stylelint](stylelint.io)
-3. [Prettier](prettier.io)
 
-## Get Started
+#### Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style.
 
-**First and foremost,** make sure that your local machine is set up with all of the 'dev environment tooling' as per the instructions in the curriculum.
+### ***Happy Coding!***
 
-Well, after establishing your directory structure on your local machine, (e.g. '~/Code/SavvyCoders'), clone the Savvy Starter Repo - essentially, there should be a button that says **Use this template.**
 
-> [Read more about using templates on GitHub here...](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
+> Note: Be sure to add `<link rel="stylesheet" href="styles.css">` in your HTML to link your stylesheet and apply your CSS
 
-Once this repo has been created on your GitHub, you can click on the button to 'clone' it as usual.
-
-Once it's `clone`d to your local machine, `cd` into the directory and **be sure to do:** `npm i` to get all of the dependencies installed. If you see any _errors_ (warnings are OK) on Windows, you may have to do `npm install`.
-
-Now, enter `code .` to open this project in VS Code, and look for a prompt to 'install some extensions' once inside VS Code (in the bottom `right` of your screen). You should install these.
-
-In your repo, feel free to update this README and make any other initial changes to files, etc. Then go ahead and do your usual `git` steps -- add, commit, and push.
-
-**Note:** This is a template repository, no need to 'fork it.
