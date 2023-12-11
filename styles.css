@@ -103,10 +103,11 @@ nav a:hover {
 }
 
 .animation {
-  /* position: fixed; */
+  position: relative;
   z-index: -1;
   display: flex;
   flex-direction: column;
+  top: 500px
 }
 
 .head {
@@ -235,7 +236,7 @@ justify-content: flex-start;
 }
 
 .torso {
-  width: 85%;
+  width: 85px;
   height: 250px;
   position: relative;
   top: -153px;
@@ -267,20 +268,124 @@ justify-content: flex-start;
   z-index: -1;
 }
 
-.arm .left, .arm .right {
+.arms {
   display: flex;
-  flex-direction: column;
-  background: var(--skin-color);
-  width: 30px;
-  height: 175px;
-  z-index: 3;
+  justify-content: space-between;
+  width: 105px;
   position: relative;
-  top: -150px;
-}
-
-.arm .left .upper, .arm .right .upper {
+  bottom: 405px;
+  right: 35px;
   border: #000 1px solid;
 }
+
+.arms > .left {
+  bottom: 300px;
+  right: 100px;
+  transform: rotate(5deg);
+}
+
+
+.shoulder {
+  border: #000 solid 1px;
+  width: 30px;
+  height: 40px;
+  background: var(--skin-color);
+  border-radius: 45% 50% 50% 45%;
+}
+
+.right .shoulder {
+  transform: rotate(340deg);
+}
+
+.arms .upper {
+  width: 20px;
+  height: 65px;
+  background: var(--skin-color);
+  border-radius: 45%;
+  border: #000 solid 1px;
+  position: relative;
+  top: -5px;
+}
+
+.arms > .left .upper {
+  left: 2px;
+}
+
+.arms .lower {
+  width: 15px;
+  height: 70px;
+  background: var(--skin-color);
+  border-radius: 45% 40% 45% 45%;
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+  transform: rotate(15deg);
+  border: #000 solid 1px;
+}
+
+.hand {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  }
+
+.left > .hand {
+  top: -15px;
+  right: 22px;
+  transform: rotate(15deg);
+}
+
+.left > .hand > .palm, .right > .hand > .palm {
+  width: 19px;
+  height: 25px;
+  background: var(--skin-color);
+  border-radius: 45% 40% 20% 15% ;
+  border: #000 solid 1px;
+}
+
+.fingers  {
+  display: flex;
+}
+
+.finger {
+  width: 3px;
+  height: 19px;
+  background: var(--skin-color);
+  border-radius: 2px 2px 5px 5px;
+  border: #000 solid 1px;
+  position: relative;
+  top: -2px;
+}
+
+.thumb {
+  width: 4px;
+  height: 18px;
+  background: var(--skin-color);
+  border: #000 solid 1px;
+  border-radius: 70% 60% 60% 70%;
+  position: relative;
+  bottom: 20px;
+  right: 25px;
+  transform: rotate(15deg);
+}
+
+.arms > .right {
+  top: -635px;
+  left: 30px;
+}
+
+.arms > .right > .upper {
+  left: 5px;
+  transform: rotate(8deg);
+}
+
+.right .hand {
+bottom: 18px;
+right: 22px;
+transform:rotate(15deg)
+}
+
+
 
 @media screen {
 
