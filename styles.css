@@ -109,7 +109,7 @@ nav a:hover {
   z-index: -1;
   display: flex;
   flex-direction: column;
-  top: 500px;
+  top: 550px;
   left: 45px;
 }
 
@@ -121,6 +121,7 @@ nav a:hover {
   right: 25px;
   background-color: var(--skin-color);
   border-radius: 75%;
+  box-shadow: -2px 3px 0px 0px rgba(110, 60, 2, 0.75);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -232,7 +233,7 @@ justify-content: flex-start;
   background: var(--skin-color);
   position: relative;
   bottom: 152px;
-  left: 5px;
+  left: 9px;
   box-shadow: 2px 2px 5px black inset, -2px 0 2px black inset;
   border-radius: 25% 0 0 25%;
   z-index: -1;
@@ -310,6 +311,7 @@ justify-content: flex-start;
   border: #000 solid 1px;
   position: relative;
   top: -5px;
+  box-shadow: 1px -2px 5px 1.5px rgba(110,60,2,0.75) inset;
 }
 
 .arms > .left .upper {
@@ -326,6 +328,9 @@ justify-content: flex-start;
   right: 5px;
   transform: rotate(15deg);
   border: #000 solid 1px;
+  box-shadow:
+  -1px 2px 5px 2px rgba(110,60,2,0.75) inset,
+  -1px -2px 1px 1px rgba(110,60,2,0.75) inset;
 }
 
 .hand {
@@ -407,6 +412,9 @@ transform:rotate(15deg)
   background: var(--skin-color);
   border-radius: 30% 30% 50% 60%;
   border: #000 1px solid;
+  box-shadow:
+  1px -2px 5px 1.5px rgba(110,60,2,0.75) inset,
+  -1px 2px 5px 1.5px rgba(110,60,2,0.75) inset;
 }
 
 .leg .lower {
@@ -414,11 +422,14 @@ transform:rotate(15deg)
   height: 110px;
   background: var(--skin-color);
   border-radius: 50% 50% 50% 20% ;
-  border-top: transparent;
+  border-top: 1px solid transparent;
   border: #000 solid 1px;
   position: relative;
   bottom: 5px;
   left: 3px;
+  box-shadow:
+  -1px 2px 5px 1.5px rgba(110,60,2,0.75) inset,
+  -1px 1px 1px 1px rgba(110,60,2,0.75) inset;
 }
 
 .foot {
@@ -427,36 +438,93 @@ transform:rotate(15deg)
   background: var(--skin-color);
   border-radius: 180% 10% 20% 10%;
   border: #000 solid 1px;
+  box-shadow:
+  -1px 1px 5px 1.5px rgba(110,60,2,0.75) inset;
   position: relative;
   bottom: 6px;
-  right: 12px;
+  right: 14px;
 }
 
 .clothes{
   width: 85px;
-  height: 325px;
+  height: 460px;
   position: relative;
   bottom: 885px;
   right: 20px;
-  border: #000 1px solid;
 }
 
 .clothes .upper {
-  width: 78px;
+  width: 82px;
   height: 150px;
-  background: linear-gradient(#ff0000 0%, #ff0000 65%, #00be00 100%);
+  background: linear-gradient(#ff0000 0%, #ff0000 30%, #00be00 100%);
   border-radius: 30%;
+  box-shadow:
+  6px 0 5px 0px rgba(0,0,0,0.75) inset,
+  -5px -0px 5px 0px rgba(0,0,0,0.75) inset;
+}
+
+.sleeves {
+  width: 100px;
+  height: 100px;
+  /* border: #000 solid 1px; */
+  position: relative;
+  bottom: 148px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sleeve {
+  width: 33px;
+  height: 85px;
+  background: linear-gradient(#ff0000 0%, #ff0000 30%, #00be00 100%);
+  z-index: 1;
+  box-shadow:
+  -2px -1px 5px 0px rgba(0,0,0,0.75) inset,
+  2px 0 5px 0px rgba(0,0,0,0.75) inset;
+}
+
+.sleeves > .right {
+  transform: rotate(358deg);
+  border-radius: 20% 35% 50% 15%;
+}
+
+.sleeves > .left {
+  transform: rotate(5deg);
+  border-radius: 30% 25% 45% 15%;
 }
 
 .clothes .lower {
   width: 90px;
   height: 165px;
-  background: linear-gradient(#00be00 0%, #ff0000 95%);
+  background-color: #00be00 ;
   border-radius: 30%;
   position: relative;
-  bottom: 17px;
+  bottom: 117px;
   right: 3px;
   z-index: -1;
+  box-shadow:
+  6px 0 5px 0px rgba(0,0,0,0.75) inset,
+  -5px 6px 5px 0px rgba(0,0,0,0.75) inset;
+}
+
+.shoes {
+width: 75px;
+height: 35px;
+border: #000 solid 1px;
+position: relative;
+bottom: 923px;
+right: 28px;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.shoe {
+  width: 48%;
+  height: 60%;
+  background-color: #990315;
+
 }
 
 @media screen {
