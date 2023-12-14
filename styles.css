@@ -45,7 +45,7 @@ nav a:hover {
 .decorative-bar1 {
   background-color: #FF36C9;
   width: 13%;
-  height: 100vh;
+  height: 114.5vh;
   position: absolute;
   top: 8px;
   left: 65%;
@@ -277,10 +277,10 @@ justify-content: flex-start;
 .arms {
   display: flex;
   justify-content: space-between;
-  width: 105px;
+  width: 115px;
   position: relative;
   bottom: 405px;
-  right: 35px;
+  right: 40px;
   z-index: 1;
 }
 
@@ -343,14 +343,22 @@ justify-content: flex-start;
   top: -15px;
   right: 22px;
   transform: rotate(15deg);
+  display: flex;
 }
 
-.left > .hand > .palm, .right > .hand > .palm {
+ .wave .palm, .right > .hand > .palm {
   width: 19px;
   height: 25px;
   background: var(--skin-color);
   border-radius: 45% 40% 20% 15% ;
   border: #000 solid 1px;
+}
+
+.wave .hand {
+  position: relative;
+  bottom: 15px;
+  right: 20px;
+  transform: rotate(10deg);
 }
 
 .fingers  {
@@ -464,34 +472,41 @@ transform:rotate(15deg)
 }
 
 .sleeves {
-  width: 100px;
+  width: 110px;
   height: 100px;
   /* border: #000 solid 1px; */
   position: relative;
-  bottom: 148px;
-  right: 10px;
+  bottom: 147.25px;
+  right: 15px;
   display: flex;
   justify-content: space-between;
 }
 
 .sleeve {
-  width: 33px;
+  width: 34px;
   height: 85px;
   background: linear-gradient(#ff0000 0%, #ff0000 30%, #00be00 100%);
   z-index: 1;
-  box-shadow:
-  -2px -1px 5px 0px rgba(0,0,0,0.75) inset,
-  2px 0 5px 0px rgba(0,0,0,0.75) inset;
 }
 
 .sleeves > .right {
   transform: rotate(358deg);
-  border-radius: 20% 35% 50% 15%;
+  border-radius: 20% 33% 50% 15%;
+  position: relative;
+  left: 2px;
+  box-shadow:
+  2px -2px 5px 0px rgba(112, 92, 92, 0.75),
+  -2px -1px 5px 0px rgba(0,0,0,0.75) inset,
+  2px 0 5px 0px rgba(0,0,0,0.75) inset;
 }
 
 .sleeves > .left {
-  transform: rotate(5deg);
+  transform: rotate(3deg);
   border-radius: 30% 25% 45% 15%;
+  box-shadow:
+  -2px -2px 5px 0px  rgba(112, 92, 92, 0.75),
+  -2px -1px 5px 0px rgba(0,0,0,0.75) inset,
+  2px 0 5px 0px rgba(0,0,0,0.75) inset;
 }
 
 .clothes .lower {
@@ -511,20 +526,40 @@ transform:rotate(15deg)
 .shoes {
 width: 75px;
 height: 35px;
-border: #000 solid 1px;
 position: relative;
 bottom: 923px;
-right: 28px;
+right: 30.5px;
 display: flex;
 justify-content: space-between;
 align-items: flex-end;
 }
 
 .shoe {
-  width: 48%;
-  height: 60%;
+  width: 49%;
+  height: 72%;
   background-color: #990315;
+  border-radius: 180% 10% 20% 10%;
+  border-top: #00be00 solid 5px;
+  border-bottom: #00be00 solid 2px;
+}
 
+.wave {
+  animation: wave 5s ease 5s infinite alternate ;
+  transform-origin: top;
+}
+
+@keyframes wave {
+0% {
+  transform: rotate(0deg) translate(0px);
+}
+
+50% {
+  transform: rotate(110deg) translate(0px);
+}
+
+100% {
+  transform: rotate(0deg) translate(0px);
+}
 }
 
 @media screen {
