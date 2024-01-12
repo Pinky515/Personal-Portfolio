@@ -562,6 +562,41 @@ align-items: flex-end;
 }
 }
 
+section#projects {
+  border:solid 1px #000 ;
+  width: 85%;
+  height: 100vh;
+  margin: 117px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projects-text {
+  align-items: flex-start;
+  text-align: center;
+}
+
+.projects {
+  border: #000 solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.projects div {
+  border: #000 solid 1px;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+}
+
+
+
 @media screen {
 
 }
+
