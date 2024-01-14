@@ -45,13 +45,11 @@ nav a:hover {
 .decorative-bar1 {
   background-color: #FF36C9;
   width: 13%;
-  height: 114.5vh;
+  height: 105.5%;
   position: absolute;
-  top: 8px;
+  top: 77px;
   left: 65%;
-  border-left: #CC0066 solid;
-  border-right: #CC0066 solid;
-  border-bottom: #CC0066 solid;
+  border: #CC0066 solid;
   z-index: -1;
 }
 
@@ -92,16 +90,19 @@ nav a:hover {
 }
 
 .decorative-bar2 {
-  background-color: #FF36C9;
-  width: 13%;
-  height: 100vh;
+  background-color: rgba(255,54,201,15%);
+  width: 50%;
+  height: 60%;
   position: absolute;
-  top: 800px;
-  left: 65%;
-  border-left: #CC0066 solid;
-  border-right: #CC0066 solid;
-  border-top: #CC0066 solid;
-  z-index: -1;
+  left: 320px;
+  margin-bottom: 5px;
+  border: #CC0066 solid;
+  box-shadow: -10px -10px 55px 5px rgba(228,3,89,0.75),
+  10px 10px 55px 5px rgba(228,3,89,0.75);
+  -webkit-box-shadow: -10px -10px 55px 5px rgba(228,3,89,0.75),
+  10px 10px 55px 5px rgba(228,3,89,0.75);
+  -moz-box-shadow: -10px -10px 55px 5px rgba(228,3,89,0.75),
+  10px 10px 55px 5px rgba(228,3,89,0.75);
 }
 
 .animation {
@@ -563,7 +564,7 @@ align-items: flex-end;
 }
 
 section#projects {
-  width: 85%;
+  width: 75%;
   height: 100%;
   margin: 117px auto;
   display: flex;
@@ -677,6 +678,31 @@ div.Feedback-Survey {
   font-size: 150px;
   margin-top: 0;
   padding-top: 0;
+}
+
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 25px;
+}
+
+.contact-header {
+  padding: 15px;
+}
+
+.socials, .info {
+  flex-wrap: wrap;
+  place-content: baseline center;
+  gap: 35px;
+  display: flex;
+}
+
+.info span {
+  color: #57039ce1;
 }
 @media screen {
 
