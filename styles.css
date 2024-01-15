@@ -22,7 +22,7 @@ nav {
 }
 
 nav ul {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   width: 40%;
   justify-content: space-between;
@@ -701,8 +701,17 @@ div.Feedback-Survey {
   display: flex;
 }
 
+
 .info span {
   color: #57039ce1;
+}
+
+
+.contact-footer > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 35px;
+  justify-content: space-around;
 }
 @media screen {
 
